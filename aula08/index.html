@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onresize="alert('Houve um redimensionamento')">
+    
+    <h1>Aprenda JavaScript</h1>
+    <p id="texto"></p>
+    <button onclick="eventoDblClick()">Clique Aqui</button><br><br>
+
+    <select onchange="mudou()" id="itens">
+        <option value="1">Valor 2</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+    <br>
+    <div id="teste" onmousemove="adicionaText()" onmouseout="viraAzul()" onmouseover="viraVermelho()" style="margin:auto auto; width:80%; height: 200px; background:blue">  
+    </div>
+    <br>
+    <input onkeydown="teclaPressionada" onblur="eventoClick()" onchange="mudou()" id="campoTexto" style="padding:80px; font-size:40px;" type="text" placeholder="Digite alguma coisa" value="Já vem com texto">
+    <script src="index.js"></script>
+</body>
+</html>
